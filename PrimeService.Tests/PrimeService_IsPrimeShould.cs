@@ -1,21 +1,19 @@
-using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using NUnit.Framework;
-using Prime.Services;
 
-namespace Prime.UnitTests.Services
+namespace PrimeService.Tests
 {
     [TestFixture]
     public class PrimeService_IsPrimeShould
     {
-        private PrimeService _primeService;
+        private global::PrimeService.PrimeService _primeService;
         
         [SetUp]
         public void Setup()
         {
-            _primeService = new PrimeService();
+            _primeService = new global::PrimeService.PrimeService();
         }
 
         [Test, TestCaseSource(nameof(GetTestCases))]

@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Prime.Services
+﻿namespace PrimeService
 {
     public class PrimeService
     {
