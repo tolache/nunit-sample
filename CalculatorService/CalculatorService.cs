@@ -5,4 +5,9 @@ public class CalculatorService
     {
         return term1 + term2;
     }
+    
+    public int SubtractTwoTerms(int minuend, int subtrahend)
+    {
+        return minuend - subtrahend;
+    }
 }

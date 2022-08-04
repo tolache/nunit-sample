@@ -1,6 +1,6 @@
 namespace CalculatorService.Tests;
 
-public class CalculatorService_Addition
+public class Addition
 {
     private global::CalculatorService.CalculatorService _calculatorService;
         
