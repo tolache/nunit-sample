@@ -1,13 +1,15 @@
+using TestHelper;
+
 namespace CalculatorService.Tests;
 
 public class Addition
 {
-    private global::CalculatorService.CalculatorService _calculatorService;
+    private CalculatorService _calculatorService;
         
     [SetUp]
     public void Setup()
     {
-        _calculatorService = new global::CalculatorService.CalculatorService();
+        _calculatorService = new CalculatorService();
     }
 
     [Test, TestCaseSource(nameof(GetTestCases))]
@@ -15,10 +17,11 @@ public class Addition
     {
         int sum = terms.Item1 + terms.Item2;
         Assert.That(_calculatorService.AddTwoTerms(terms.Item1, terms.Item2), Is.EqualTo(sum));
+        Helper.IncreaseTestDuration();
     }
     
     private static IEnumerable<Tuple<int,int>> GetTestCases()
     {
-        return new Tuple<int, int>[] {new Tuple<int, int>(2, 3), new Tuple<int, int>(4, 5)};
+        return new[] {new Tuple<int, int>(2, 3), new Tuple<int, int>(4, 5)};
     }
 }

@@ -18,6 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CalculatorService\CalculatorService.csproj" />
+    <ProjectReference Include="..\TestHelper\TestHelper.csproj" />
   </ItemGroup>
 
 </Project>

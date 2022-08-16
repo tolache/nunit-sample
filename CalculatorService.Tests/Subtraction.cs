@@ -1,13 +1,15 @@
-﻿namespace CalculatorService.Tests;
+﻿using TestHelper;
+
+namespace CalculatorService.Tests;
 
 public class Subtraction
 {
-    private global::CalculatorService.CalculatorService _calculatorService;
-        
+    private CalculatorService _calculatorService;
+
     [SetUp]
     public void Setup()
     {
-        _calculatorService = new global::CalculatorService.CalculatorService();
+        _calculatorService = new CalculatorService();
     }
 
     [Test, TestCaseSource(nameof(GetTestCases))]
@@ -15,14 +17,15 @@ public class Subtraction
     {
         int difference = minuend - subtrahend;
         Assert.That(_calculatorService.SubtractTwoTerms(minuend, subtrahend), Is.EqualTo(difference));
+        Helper.IncreaseTestDuration();
     }
-    
+
     private static IEnumerable<int[]> GetTestCases()
     {
         yield return
-            new int[] {1, 2};
+            new[] {1, 2};
 
         yield return
-            new int[] {4, 3};
+            new[] {4, 3};
     }
 }

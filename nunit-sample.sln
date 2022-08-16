@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorService", "Calcul
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorService.Tests", "CalculatorService.Tests\CalculatorService.Tests.csproj", "{933F0656-FD7E-420A-9C34-C7FE1B328193}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestHelper", "TestHelper\TestHelper.csproj", "{F48DC7A3-1296-48CF-8F85-7E10436BDB0D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -72,5 +74,17 @@ Global
 		{933F0656-FD7E-420A-9C34-C7FE1B328193}.Release|x64.Build.0 = Release|Any CPU
 		{933F0656-FD7E-420A-9C34-C7FE1B328193}.Release|x86.ActiveCfg = Release|Any CPU
 		{933F0656-FD7E-420A-9C34-C7FE1B328193}.Release|x86.Build.0 = Release|Any CPU
+		{F48DC7A3-1296-48CF-8F85-7E10436BDB0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F48DC7A3-1296-48CF-8F85-7E10436BDB0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F48DC7A3-1296-48CF-8F85-7E10436BDB0D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F48DC7A3-1296-48CF-8F85-7E10436BDB0D}.Debug|x64.Build.0 = Debug|Any CPU
+		{F48DC7A3-1296-48CF-8F85-7E10436BDB0D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F48DC7A3-1296-48CF-8F85-7E10436BDB0D}.Debug|x86.Build.0 = Debug|Any CPU
+		{F48DC7A3-1296-48CF-8F85-7E10436BDB0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F48DC7A3-1296-48CF-8F85-7E10436BDB0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F48DC7A3-1296-48CF-8F85-7E10436BDB0D}.Release|x64.ActiveCfg = Release|Any CPU
+		{F48DC7A3-1296-48CF-8F85-7E10436BDB0D}.Release|x64.Build.0 = Release|Any CPU
+		{F48DC7A3-1296-48CF-8F85-7E10436BDB0D}.Release|x86.ActiveCfg = Release|Any CPU
+		{F48DC7A3-1296-48CF-8F85-7E10436BDB0D}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
