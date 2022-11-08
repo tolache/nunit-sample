@@ -352,6 +352,3 @@ MigrationBackup/
 # IntelliJ
 .idea/
 **/*.iml
-
-.sonarqube/
-WriteLines*.txt
