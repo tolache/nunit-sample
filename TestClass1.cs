@@ -18,7 +18,7 @@ public class TestClass1
         string testName = $"{_className}.{methodName}";
         TestDelayer.Delay();
         TestContext.Out.WriteLine($"{testName} completed.");
-        Assert.Pass();
+        Assert.Fail("Dummy error message");
     }
     
     [Test]
