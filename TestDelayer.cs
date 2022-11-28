@@ -2,7 +2,7 @@
 
 public static class TestDelayer
 {
-    private const double TestDurationS = 10;
+    private const double TestDurationS = 1;
     
     private static int TestDurationMs => Convert.ToInt32(TestDurationS * 1000);
 
@@ -11,4 +11,3 @@ public static class TestDelayer
         Thread.Sleep(TestDurationMs);
     }
 }
-// dummy comment 2
