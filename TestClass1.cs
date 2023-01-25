@@ -17,6 +17,8 @@ public class TestClass1
         string methodName = System.Reflection.MethodBase.GetCurrentMethod().Name;
         string testName = $"{_className}.{methodName}";
         TestDelayer.Delay();
+        TestContext.Out.WriteLine($"Application root folder: " +
+                                  $"{Path.GetDirectoryName(AppDomain.CurrentDomain.BaseDirectory)}");
         TestContext.Out.WriteLine($"{testName} completed.");
         Assert.Pass();
     }

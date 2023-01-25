@@ -2,7 +2,7 @@
 
 public static class TestDelayer
 {
-    private const double TestDurationS = 1;
+    private const double TestDurationS = 0.1;
     
     private static int TestDurationMs => Convert.ToInt32(TestDurationS * 1000);
 
