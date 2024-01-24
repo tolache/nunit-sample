@@ -19,7 +19,7 @@ public class TestClass1
         TestDelayer.Delay();
         TestContext.Out.WriteLine($"Application root folder: " +
                                   $"{Path.GetDirectoryName(AppDomain.CurrentDomain.BaseDirectory)}");
-        TestContext.Out.WriteLine($"{testName} completed. !dummy text");
+        TestContext.Out.WriteLine($"{testName} completed. !dummy text 2");
         Assert.Pass();
     }
     
