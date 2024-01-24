@@ -4,7 +4,7 @@ namespace nunit_sample;
 public class TestClass1
 {
     private string _className;
-    
+
     [SetUp]
     public void Setup()
     {
@@ -19,7 +19,7 @@ public class TestClass1
         TestDelayer.Delay();
         TestContext.Out.WriteLine($"Application root folder: " +
                                   $"{Path.GetDirectoryName(AppDomain.CurrentDomain.BaseDirectory)}");
-        TestContext.Out.WriteLine($"{testName} completed.");
+        TestContext.Out.WriteLine($"{testName} completed. !dummy text");
         Assert.Pass();
     }
     
